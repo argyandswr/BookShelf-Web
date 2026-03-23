@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  height: auto;
+  background-color: #49494a;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 2px 10px rgba(156, 155, 154);
+}
+
+header h1 {
+  padding: 16px;
+  color: white;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main section {
+  width: 1024px;
+  border-radius: 8px;
+  margin: 16px;
+  background: #e1e1e1;
+  box-shadow: 5px 2px 10px rgba(156, 155, 154);
+  padding: 16px;
+  flex-grow: 1;
+  height: fit-content;
+}
+
+.list-item {
+  border-radius: 16px;
+  margin-top: 16px;
+  box-shadow: 2px 2px 10px rgba(156, 155, 154);
+  padding: 12px 24px 12px 24px;
+  background: white;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.list-item > h3 {
+  margin-bottom: unset;
+}
+
+.list-item > p {
+  margin-top: 5px;
+}
+
+.list-item > div {
+  display: flex;
+  gap: 10px;
+  padding: 15px 0 15px 0;
+}
+
+button {
+  border-radius: 5px;
+  border-style: none;
+  width: auto;
+  height: 30px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #a8a7a7ff;
+  color: black;
+}
+
+button {
+  background-color: #3d3c3b;
+  color: white;
+}
+
+.completedBtn:hover {
+  background-color: #55f27f;
+  color: black;
+}
+
+.completedBtn {
+  background-color: #1f592f;
+  color: white;
+}
+
+.removeBtn:hover {
+  background-color: #ff5c6c;
+  color: black;
+}
+
+.removeBtn {
+  background-color: #6e292f;
+  color: white;
+}
+
+.editBtn:hover {
+  background-color: #e1e1e1;
+  color: black;
+}
+
+.editBtn {
+  background-color: #3d3c3b;
+  color: white;
+}
+
+.form {
+  display: flex;
+  padding: 16px;
+  border-radius: 16px;
+}
+
+#bookForm {
+  flex-direction: column;
+}
+
+.form-section {
+  color: #3d3c3b;
+}
+
+.form-section h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.checkbox {
+  margin-top: 10px;
+}
+
+.checkbox label {
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#searchBook label {
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#bookFormSubmit, #editFormSubmit {
+  margin-top: 15px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 18px;
+}
+
+input[type="text"],
+input[type="number"] {
+  border-radius: 5px;
+  background: #f5f1ff;
+  border: 2px solid #3d3c3b;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+  font-size: 21px;
+}
+
+.search-wrap form {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+  padding: 5px;
+}
+
+.search form label {
+  flex-grow: 1;
+}
+
+.search-wrap form input {
+  flex-grow: 4;
+  margin-bottom: 0;
+}
+
+.search-wrap form button {
+  flex-grow: 2;
+  padding: 20px;
+  font-size: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-form{
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 2px 2px 10px rgba(156, 155, 154);
+}
+
+@media only screen and (max-width: 1024px) {
+  main {
+    margin: 0;
+  }
+
+  main section {
+    width: 100%;
+  }
+
+  .list-item {
+    width: 90%;
+  }
+
+  .form {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .search-wrap form{
+    width: 100%;
+    display: flex;
+    padding: 16px;
+    border-radius: 16px;
+    flex-direction: column;
+  }
+}
